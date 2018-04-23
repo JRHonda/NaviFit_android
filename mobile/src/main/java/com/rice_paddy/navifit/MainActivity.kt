@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Example of a call to a native method
-        sample_text.text = "Justin Honda"
+        sample_text.text = "My name is Justin Honda."
         Log.d("myTag", "This is my message");
     }
 
