@@ -3,8 +3,9 @@ package com.rice_paddy.navifit
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.util.LogPrinter
 import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Button
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,8 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // get button
+         Button btn = (Button) findViewById (R.id.testButton);
+
+
         // Example of a call to a native method
-        sample_text.text = "My name is Justin Honda."
+        sampleTextField.text = "My name is Justin Honda."
         Log.d("myTag", "This is my message");
     }
 
@@ -22,6 +27,7 @@ class MainActivity : AppCompatActivity() {
      * which is packaged with this application.
      */
     external fun stringFromJNI(): String
+
 
     companion object {
 
