@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val globalVariables = GlobalVariables()
+        globalVariables.testStringProperties()
+
         clickedButton(test(69))
 
 
@@ -22,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         sampleTextField.text = "My name is Justin Honda."
         Log.d("myTag", "This is my message");
     }
+
+
 
     override fun onResume() {
         super.onResume()
